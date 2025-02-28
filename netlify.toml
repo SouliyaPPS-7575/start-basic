@@ -1,0 +1,11 @@
+[build]
+  command = "yarn build"
+  functions = "netlify/functions"
+  publish = "dist"
+  
+[[functions]]
+  external_node_modules = ["@mui/material", "@mui/system"]
+
+[[edge_functions]]
+  function = "ssr"
+  path = "/*"
