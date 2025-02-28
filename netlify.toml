@@ -1,6 +1,5 @@
 [build]
-  command = "yarn build"
-  functions = "netlify/functions"
+  command = "yarn build --preset netlify"
   publish = "dist"
 
 [functions]
